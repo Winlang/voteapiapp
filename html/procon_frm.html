@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,address=no"/>
+    <title>投票项目页</title>
+    <link rel="stylesheet" type="text/css" href="../css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/aui-slide.css" />   
+    <style>
+    	body{
+    		height:100%;
+    		margin:0;
+    		padding:0;
+    		background-color:#f7f9f8;
+    	}
+    	.aui-content{background-color:#fff;}
+    	.savatar img{max-width:100%;}
+    	div.title h2{margin:0;padding:0;}
+    	.friend{width:18px;height:18px;}
+    	.idol-avatar{width:40px;height:40px;border:1px solid red;}
+    	.aui-input-row{vertical-align:middle;}
+    </style>
+</head>
+<body>
+       
+       <div class="aui-content">
+            <div class="aui-text-center savatar">
+                 <img src="../image/123.jpg" alt="" />
+            </div>
+            <div class="aui-padded-10 title">
+                  <h2 class="aui-text-center">标题标题标题标题标题标题</h2>
+            </div>
+            <div class="aui-flex-col aui-flex-center aui-border-tb">
+                  <div class="aui-flex-item-3 aui-flex-middle aui-padded-10">
+                        <div class="aui-btn aui-btn-warning  aui-btn-outlined rank">奖项</div>
+                  </div>
+                  <div class="aui-flex-item-9 aui-flex-middle aui-padded-10 ">
+                        <div class="aui-btn aui-btn-warning  aui-btn-outlined rank">排行榜</div>
+                  </div>
+            </div>
+       </div>
+       <div class="aui-content aui-padded-10">
+             <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介....</p>
+       </div>
+       <div class="aui-content aui-padded-10">
+             <ul class="aui-list-view">
+             	<li class="aui-list-view-cell">
+             	     <a class="aui-arrow-right">
+             	                   您有81个好友参加
+             	       <!--<img class="aui-pull-right friend" src="../image/wx.png" alt=""  />-->  
+             	     </a>
+             	</li>
+             </ul>
+       </div>
+       <div class="aui-content">
+           <p class="aui-padded-10">投票选项</p>
+           <div class="aui-form">
+                <div class="aui-input-row" onclick="openVote()">
+                   <input type="radio" class="aui-radio aui-radio-warning" name="idol"/>
+                   <img class="idol-avatar" src="../image/123.jpg" alt="" />
+                   <label class="aui-input-addon ">张学友</label>
+                   <span class="aui-iconfont aui-icon-like"></span>
+                   <span>33</span>
+                   <span class="aui-iconfont aui-icon-order"></span>
+                   <span>99</span>
+                </div>
+                <div class="aui-input-row">                
+                   <input type="radio" class="aui-radio aui-radio-warning" name="idol"/>
+                   <label class="aui-input-addon">刘德华</label>
+                </div>
+                <div class="aui-input-row">
+                   <input type="radio" class="aui-radio aui-radio-warning" name="idol"/>
+                   <label class="aui-input-addon">郭富城</label>
+                </div>
+                <div class="aui-input-row">
+                   <input type="radio" class="aui-radio aui-radio-warning" name="idol"/>
+                   <label class="aui-input-addon">黎明</label>
+                </div>
+                <div class="aui-input-row">
+                   <input type="radio" class="aui-radio aui-radio-warning" name="idol"/>
+                   <label class="aui-input-addon">周华健</label>
+                </div>
+                <div class="aui-input-row">
+                   <input type="radio" class="aui-radio aui-radio-warning" name="idol"/>
+                   <label class="aui-input-addon">张国荣</label>
+                </div>
+           </div>      
+       </div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+    function openVote(){
+       api.openWin({
+	       name: 'votecon_win',
+	       url: 'votecon_win.html'
+       });
+    }
+	apiready = function(){
+		
+	};
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
